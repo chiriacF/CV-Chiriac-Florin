@@ -1,0 +1,179 @@
+@font-face {
+    font-family: Oswald-Regular;
+    src: url(/fonts/Oswald-Regular.ttf);
+}
+
+* {
+    font-family: Oswald-Regular;
+}
+
+.out {
+    background-color: gray;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 40% auto;
+    margin: 0px;
+}
+
+.grid > div > img {
+    width: 8em;
+}
+
+.grid > .links > ul > li > a > img {
+    width: 30px;
+    height: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+header > h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    background-color: blue;
+    text-align: center;
+}
+
+p {
+    padding: 20px;
+    color: rgb(58, 58, 168);
+}
+
+.grid,
+.opleiding,
+.talen,
+.loopbaan,
+.competenties,
+.varia {
+    background-color: lightgray;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    margin-bottom: 0px;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+/* mobil media query */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    header > h1 {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .grid > div > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid > .links > ul > li > a > img {
+        width: 24px;
+        height: 24px;
+    }
+
+    p {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    h2,
+    h3 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+        text-align: center;
+    }
+    .grid > .links > ul {
+        display: flex;       /* Flexbox doar pentru afișarea imagini orizontal */
+        justify-content: center;
+        gap: 10px;           /* Spațiu între imagini */
+        padding: 0;
+        list-style: none;
+    }
+}
+
+/* tablet media query */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header > h1 {
+        font-size: 36px;
+    }
+
+    .grid > div > img {
+        width: 100%;
+        height: auto;
+    }
+/*
+    .grid > .links > ul > li > a > img {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+    }
+*/
+ /* Afișare orizontală pentru imagini doar în .links */
+ .grid > .links > ul {
+    display: flex;       /* Flexbox doar pentru afișarea imagini orizontal */
+    justify-content: center;
+    gap: 10px;           /* Spațiu între imagini */
+    padding: 0;
+    list-style: none;
+}
+    .grid>.info>ul  {
+        /*background-color: lime;*/
+        height: 60%;
+        padding-right: 1em;
+    }
+
+    p {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    h2,
+    h3 {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
